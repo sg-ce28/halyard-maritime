@@ -1,0 +1,198 @@
+<!-- MOCK SITE FOR TRAINING. Not a real organization. -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Overview · Halyard Maritime Logistics</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<svg class="sprite" aria-hidden="true" focusable="false">
+<symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2.2 5.3-5.3 2.2 2.2-5.3z" fill="currentColor" stroke="none"/></symbol>
+<symbol id="i-ship" viewBox="0 0 24 24"><path d="M4.5 17.5L3.5 13h17l-1 4.5"/><path d="M6.5 13V8.5h11V13"/><path d="M12 8.5V4.5M9.5 4.5h5"/><path d="M2.5 20.5c1.6 0 1.6-1 3.2-1s1.6 1 3.2 1 1.6-1 3.2-1 1.6 1 3.2 1 1.6-1 3.2-1 1.6 1 3 1"/></symbol>
+<symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="3" y="7.5" width="18" height="12.5" rx="2"/><path d="M8.5 7.5v-2a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v2"/><path d="M3 12.5h18"/></symbol>
+<symbol id="i-people" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.6a3.5 3.5 0 0 1 0 6.8"/><path d="M17.5 13.6a6.5 6.5 0 0 1 4 6.4"/></symbol>
+<symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l7.5 3v5.5c0 4.6-3.2 7.9-7.5 9.5-4.3-1.6-7.5-4.9-7.5-9.5V6z"/><path d="M12 10.5V14"/></symbol>
+<symbol id="i-logout" viewBox="0 0 24 24"><path d="M15 17l5-5-5-5M20 12H9"/><path d="M13 21H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7"/></symbol>
+<symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.3-4.3"/></symbol>
+<symbol id="i-box" viewBox="0 0 24 24"><path d="M12 3l8.5 4.5v9L12 21l-8.5-4.5v-9z"/><path d="M3.5 7.5L12 12l8.5-4.5"/><path d="M12 12v9"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.5 2.5L16 9.5"/></symbol>
+<symbol id="i-lock" viewBox="0 0 24 24"><rect x="4.5" y="10.5" width="15" height="10" rx="2"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/><path d="M12 14.5v2.5"/></symbol>
+<symbol id="i-key" viewBox="0 0 24 24"><circle cx="8" cy="15.5" r="4.5"/><path d="M11.2 12.3L20 3.5M16.5 7l3 3M14 9.5l3 3"/></symbol>
+<symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></symbol>
+<symbol id="i-map" viewBox="0 0 24 24"><path d="M3 6.5l6-2.5 6 2.5 6-2.5v14l-6 2.5-6-2.5-6 2.5z"/><path d="M9 4v14M15 6.5v14"/></symbol>
+<symbol id="i-note" viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6z"/><path d="M15 3v4h4M9.5 12h5M9.5 16h5"/></symbol>
+<symbol id="i-anchor" viewBox="0 0 24 24"><circle cx="12" cy="5" r="2.5"/><path d="M12 7.5V21"/><path d="M5 13H3a9 9 0 0 0 18 0h-2"/><path d="M8.5 10.5h7"/></symbol>
+<symbol id="i-server" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="6.5" rx="1.5"/><rect x="3" y="13.5" width="18" height="6.5" rx="1.5"/><path d="M7 7.25h.01M7 16.75h.01"/></symbol>
+<symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v11M7.5 10.5L12 15l4.5-4.5"/><path d="M4 19h16"/></symbol>
+</svg>
+<div class="shell">
+  <aside class="sidebar">
+    <a class="brand" href="dashboard.html">
+      <span class="brand__mark">HML</span>
+      <span>Halyard Maritime<small>Operations Dashboard</small></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="dashboard.html" aria-current="page"><svg class="ic"><use href="#i-compass"></use></svg>Overview</a>
+      <a href="vessels.html"><svg class="ic"><use href="#i-ship"></use></svg>Vessels</a>
+      <a href="customers.html"><svg class="ic"><use href="#i-briefcase"></use></svg>Customers</a>
+      <a href="staff.html"><svg class="ic"><use href="#i-people"></use></svg>Staff directory</a>
+      <a href="admin.html" class="nav__admin" hidden><svg class="ic"><use href="#i-shield"></use></svg>Admin</a>
+    </nav>
+    <div class="sidebar__foot">
+      <div id="who">Not signed in</div>
+      <a href="#" id="logout"><svg class="ic"><use href="#i-logout"></use></svg>Sign out</a>
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="topbar">
+      <div>
+        <div class="crumb">Operations · Overview</div>
+        <h1>Fleet overview</h1>
+      </div>
+      <span class="chip"><span class="chip__avatar" id="chip-avatar">?</span><span id="chip-name">Guest</span></span>
+    </div>
+
+    <section class="grid grid--kpi" aria-label="Fleet at a glance">
+      <div class="card">
+        <span class="kpi__icon"><svg class="ic"><use href="#i-ship"></use></svg></span>
+        <div class="kpi__label">Vessels at sea</div>
+        <div class="kpi__value">4</div>
+        <div class="kpi__delta">of 6 in the fleet</div>
+        <div class="fleet-dots" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></div>
+      </div>
+      <div class="card">
+        <span class="kpi__icon"><svg class="ic"><use href="#i-box"></use></svg></span>
+        <div class="kpi__label">Containers in port</div>
+        <div class="kpi__value">1,286</div>
+        <div class="kpi__delta up">+38 since yesterday</div>
+      </div>
+      <div class="card">
+        <span class="kpi__icon kpi__icon--bad"><svg class="ic"><use href="#i-clock"></use></svg></span>
+        <div class="kpi__label">Delayed shipments</div>
+        <div class="kpi__value">7</div>
+        <div class="kpi__delta down">+2 (weather, MV Honu)</div>
+      </div>
+      <div class="card">
+        <span class="kpi__icon"><svg class="ic"><use href="#i-check"></use></svg></span>
+        <div class="kpi__label">On-time rate (30 days)</div>
+        <div class="kpi__value">94.2%</div>
+        <div class="kpi__delta up">+0.6 pts</div>
+      </div>
+    </section>
+
+    <section class="grid grid--2">
+      <div>
+        <div class="card">
+          <div class="card__head">
+            <h2><svg class="ic"><use href="#i-search"></use></svg>Track a shipment</h2>
+            <small>Container, customer, or vessel</small>
+          </div>
+          <form id="track-form" class="search">
+            <input id="track-q" type="search" placeholder="e.g. HMLU 482913 0 or Kona Coast">
+            <button class="btn" type="submit"><svg class="ic"><use href="#i-search"></use></svg>Search</button>
+            <button class="btn btn--ghost" type="button" id="track-reset">Clear</button>
+          </form>
+          <p id="track-msg" class="hint">Showing all 10 shipments.</p>
+          <div class="table-wrap">
+            <table id="shipments">
+              <thead>
+                <tr><th>Container</th><th>Customer</th><th>Vessel</th><th>Route</th><th>ETA</th><th>Status</th></tr>
+              </thead>
+              <tbody>
+                <tr><td class="num">HMLU 482913 0</td><td>Kona Coast Coffee Co.</td><td>MV Kōlea</td><td>Long Beach → Honolulu</td><td class="num">Sep 24</td><td><span class="badge badge--ok">On time</span></td></tr>
+                <tr><td class="num">HMLU 118204 7</td><td>Island Fresh Produce</td><td>MV Honu</td><td>Oakland → Hilo</td><td class="num">Sep 23</td><td><span class="badge badge--bad">Delayed</span></td></tr>
+                <tr><td class="num">HMLU 773310 2</td><td>Pacific Solar Supply</td><td>MV Iwa</td><td>Honolulu → Pago Pago</td><td class="num">Sep 29</td><td><span class="badge badge--ok">On time</span></td></tr>
+                <tr><td class="num">HMLU 240577 5</td><td>Mauna View Hardware</td><td>MV Kōlea</td><td>Long Beach → Honolulu</td><td class="num">Sep 24</td><td><span class="badge badge--warn">Customs hold</span></td></tr>
+                <tr><td class="num">HMLU 905126 8</td><td>Lanai Ranch Feed</td><td>MV Nēnē</td><td>Honolulu → Kaunakakai</td><td class="num">Sep 22</td><td><span class="badge badge--muted">In port</span></td></tr>
+                <tr><td class="num">HMLU 336640 1</td><td>Windward Auto Parts</td><td>MV Honu</td><td>Oakland → Hilo</td><td class="num">Sep 23</td><td><span class="badge badge--bad">Delayed</span></td></tr>
+                <tr><td class="num">HMLU 551873 9</td><td>Kona Coast Coffee Co.</td><td>MV Manō</td><td>Honolulu → Long Beach</td><td class="num">Sep 27</td><td><span class="badge badge--ok">At sea</span></td></tr>
+                <tr><td class="num">HMLU 612094 3</td><td>Aloha Medical Supply</td><td>MV Iwa</td><td>Honolulu → Pago Pago</td><td class="num">Sep 29</td><td><span class="badge badge--ok">On time</span></td></tr>
+                <tr><td class="num">HMLU 197450 6</td><td>Big Island Brewing</td><td>MV Manō</td><td>Honolulu → Long Beach</td><td class="num">Sep 27</td><td><span class="badge badge--ok">At sea</span></td></tr>
+                <tr><td class="num">HMLU 828311 4</td><td>Island Fresh Produce</td><td>MV Nēnē</td><td>Honolulu → Kahului</td><td class="num">Sep 22</td><td><span class="badge badge--ok">On time</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="card">
+          <div class="card__head"><h2><svg class="ic"><use href="#i-map"></use></svg>Active routes</h2><small>Live positions</small></div>
+          <svg class="route-map" viewBox="0 0 640 420" role="img" aria-label="Chart of active routes between the West Coast, Hawaiʻi and American Samoa, with live vessel positions">
+            <rect width="640" height="420" fill="#e6eff0"/>
+            <g stroke="#0b1f33" stroke-opacity=".14" stroke-width="1" fill="none">
+              <path d="M60 0V420M160 0V420M260 0V420M360 0V420M460 0V420M560 0V420"/>
+              <path d="M0 7.4H640M0 81H640M0 154.7H640M0 228.4H640M0 375.8H640"/>
+              <path d="M0 302.1H640" stroke-opacity=".32"/>
+            </g>
+            <g font-size="9" fill="#0b1f33" fill-opacity=".6">
+              <text x="63" y="414">170°W</text><text x="163" y="414">160°W</text><text x="263" y="414">150°W</text><text x="363" y="414">140°W</text><text x="463" y="414">130°W</text><text x="563" y="414">120°W</text>
+              <text x="6" y="78">30°N</text><text x="6" y="151">20°N</text><text x="6" y="225">10°N</text><text x="6" y="299">Equator</text><text x="6" y="372">10°S</text>
+            </g>
+            <g class="routes" fill="none" stroke="#0b1f33" stroke-width="1.5" stroke-dasharray="6 5" stroke-opacity=".7">
+              <path d="M578 53L181 145"/>
+              <path d="M537 24L209 157"/>
+              <path d="M181 145L53 407"/>
+              <path d="M181 145L195 148"/>
+            </g>
+            <g fill="#0b1f33" stroke="#fffdf9" stroke-width="1.5">
+              <circle cx="537" cy="24" r="4"/><circle cx="578" cy="53" r="4"/><circle cx="181" cy="145" r="4"/><circle cx="190" cy="147" r="3"/><circle cx="195" cy="148" r="3"/><circle cx="209" cy="157" r="4"/><circle cx="53" cy="407" r="4"/>
+            </g>
+            <g font-size="10.5" fill="#0b1f33">
+              <text x="530" y="21" text-anchor="end">Oakland</text>
+              <text x="582" y="44" text-anchor="end">Long Beach</text>
+              <text x="173" y="141" text-anchor="end">Honolulu</text>
+              <text x="200" y="126">Kahului</text>
+              <text x="216" y="172">Hilo</text>
+              <text x="62" y="398">Pago Pago</text>
+            </g>
+            <g class="pings" fill="none" stroke="#0f7f8a" stroke-width="1.5">
+              <circle cx="324" cy="95" r="7"/>
+              <circle cx="476" cy="67" r="7" stroke="#d4541b"/>
+              <circle cx="139" cy="211" r="7"/>
+              <circle cx="258" cy="120" r="7"/>
+            </g>
+            <g stroke="#fffdf9" stroke-width="2">
+              <circle cx="324" cy="95" r="5.5" fill="#0f7f8a"><title>MV Kōlea · 28.1° N, 143.6° W</title></circle>
+              <circle cx="476" cy="67" r="5.5" fill="#d4541b"><title>MV Honu · 31.9° N, 128.4° W · delayed</title></circle>
+              <circle cx="139" cy="211" r="5.5" fill="#0f7f8a"><title>MV Iwa · 12.4° N, 162.1° W</title></circle>
+              <circle cx="258" cy="120" r="5.5" fill="#0f7f8a"><title>MV Manō · 24.7° N, 150.2° W</title></circle>
+            </g>
+            <g font-size="10" font-weight="600" fill="#0b1f33">
+              <text x="333" y="92">MV Kōlea</text>
+              <text x="484" y="58">MV Honu</text>
+              <text x="131" y="208" text-anchor="end">MV Iwa</text>
+              <text x="267" y="110">MV Manō</text>
+            </g>
+          </svg>
+          <div class="map-legend">
+            <span><i class="sw--sea"></i>Vessel at sea</span>
+            <span><i class="sw--signal"></i>Delayed</span>
+            <span><i class="sw--ink"></i>Port</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__head"><h2><svg class="ic"><use href="#i-bell"></use></svg>Alerts</h2></div>
+          <ul class="signals">
+            <li><span class="badge badge--bad">Delay</span><span>MV Honu running 14 h late (weather off Point Conception).</span></li>
+            <li><span class="badge badge--warn">Customs</span><span>HMLU 240577 5 held for document check at Honolulu.</span></li>
+            <li><span class="badge badge--muted">Notice</span><span>Dashboard maintenance Sunday 02:00 to 04:00 HST.</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <p class="mock-note"><span id="since"></span> · Training site. Not a real organization.</p>
+  </main>
+</div>
+
+<script src="assets/js/app.js"></script>
+<script src="assets/js/dashboard.js"></script>
+<script src="assets/js/ui.js"></script>
+</body>
+</html>

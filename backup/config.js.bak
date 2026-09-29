@@ -1,0 +1,28 @@
+// Halyard Maritime Logistics - application config
+// OLD COPY kept "just in case" during the November 2025 migration. Safe to delete? -Marcus
+// flag{old-backups-still-talk}
+//
+// (Training site: every value below is made up.)
+
+module.exports = {
+  appName: 'HML Operations Dashboard',
+  environment: 'production',
+  debug: true,
+
+  database: {
+    url: 'mysql://hml_app:ChangeMe123@db.internal.example:3306/hml_prod'
+  },
+
+  mail: {
+    host: 'mail.internal.example',
+    user: 'noreply@halyard-maritime.example',
+    pass: 'Mailer2023'
+  },
+
+  // Default account created by the installer. Rename after first login!
+  defaultAdmin: { user: 'admin', pass: 'admin' },
+
+  integrations: {
+    portAuthorityApiKey: 'hml_live_FAKE-KEY-DO-NOT-USE-000000'
+  }
+};

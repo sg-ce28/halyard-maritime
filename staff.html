@@ -1,0 +1,119 @@
+<!-- MOCK SITE FOR TRAINING. Not a real organization. -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Staff directory · Halyard Maritime Logistics</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<svg class="sprite" aria-hidden="true" focusable="false">
+<symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2.2 5.3-5.3 2.2 2.2-5.3z" fill="currentColor" stroke="none"/></symbol>
+<symbol id="i-ship" viewBox="0 0 24 24"><path d="M4.5 17.5L3.5 13h17l-1 4.5"/><path d="M6.5 13V8.5h11V13"/><path d="M12 8.5V4.5M9.5 4.5h5"/><path d="M2.5 20.5c1.6 0 1.6-1 3.2-1s1.6 1 3.2 1 1.6-1 3.2-1 1.6 1 3.2 1 1.6-1 3.2-1 1.6 1 3 1"/></symbol>
+<symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="3" y="7.5" width="18" height="12.5" rx="2"/><path d="M8.5 7.5v-2a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v2"/><path d="M3 12.5h18"/></symbol>
+<symbol id="i-people" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.6a3.5 3.5 0 0 1 0 6.8"/><path d="M17.5 13.6a6.5 6.5 0 0 1 4 6.4"/></symbol>
+<symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l7.5 3v5.5c0 4.6-3.2 7.9-7.5 9.5-4.3-1.6-7.5-4.9-7.5-9.5V6z"/><path d="M12 10.5V14"/></symbol>
+<symbol id="i-logout" viewBox="0 0 24 24"><path d="M15 17l5-5-5-5M20 12H9"/><path d="M13 21H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7"/></symbol>
+<symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.3-4.3"/></symbol>
+<symbol id="i-box" viewBox="0 0 24 24"><path d="M12 3l8.5 4.5v9L12 21l-8.5-4.5v-9z"/><path d="M3.5 7.5L12 12l8.5-4.5"/><path d="M12 12v9"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.5 2.5L16 9.5"/></symbol>
+<symbol id="i-lock" viewBox="0 0 24 24"><rect x="4.5" y="10.5" width="15" height="10" rx="2"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/><path d="M12 14.5v2.5"/></symbol>
+<symbol id="i-key" viewBox="0 0 24 24"><circle cx="8" cy="15.5" r="4.5"/><path d="M11.2 12.3L20 3.5M16.5 7l3 3M14 9.5l3 3"/></symbol>
+<symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></symbol>
+<symbol id="i-map" viewBox="0 0 24 24"><path d="M3 6.5l6-2.5 6 2.5 6-2.5v14l-6 2.5-6-2.5-6 2.5z"/><path d="M9 4v14M15 6.5v14"/></symbol>
+<symbol id="i-note" viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6z"/><path d="M15 3v4h4M9.5 12h5M9.5 16h5"/></symbol>
+<symbol id="i-anchor" viewBox="0 0 24 24"><circle cx="12" cy="5" r="2.5"/><path d="M12 7.5V21"/><path d="M5 13H3a9 9 0 0 0 18 0h-2"/><path d="M8.5 10.5h7"/></symbol>
+<symbol id="i-server" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="6.5" rx="1.5"/><rect x="3" y="13.5" width="18" height="6.5" rx="1.5"/><path d="M7 7.25h.01M7 16.75h.01"/></symbol>
+<symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v11M7.5 10.5L12 15l4.5-4.5"/><path d="M4 19h16"/></symbol>
+</svg>
+<div class="shell">
+  <aside class="sidebar">
+    <a class="brand" href="dashboard.html">
+      <span class="brand__mark">HML</span>
+      <span>Halyard Maritime<small>Operations Dashboard</small></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="dashboard.html"><svg class="ic"><use href="#i-compass"></use></svg>Overview</a>
+      <a href="vessels.html"><svg class="ic"><use href="#i-ship"></use></svg>Vessels</a>
+      <a href="customers.html"><svg class="ic"><use href="#i-briefcase"></use></svg>Customers</a>
+      <a href="staff.html" aria-current="page"><svg class="ic"><use href="#i-people"></use></svg>Staff directory</a>
+      <a href="admin.html" class="nav__admin" hidden><svg class="ic"><use href="#i-shield"></use></svg>Admin</a>
+    </nav>
+    <div class="sidebar__foot">
+      <div id="who">Not signed in</div>
+      <a href="#" id="logout"><svg class="ic"><use href="#i-logout"></use></svg>Sign out</a>
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="topbar">
+      <div>
+        <div class="crumb">Company · Staff directory</div>
+        <h1>Meet the ops team</h1>
+      </div>
+      <span class="chip"><span class="chip__avatar" id="chip-avatar">?</span><span id="chip-name">Guest</span></span>
+    </div>
+
+    <div class="notice">This page is public so customers and port agents can reach us. Usernames follow the pattern first initial + last name.</div>
+
+    <div class="people">
+      <div class="person">
+        <div class="person__avatar">LA</div>
+        <div>
+          <h3>Leilani Akana</h3>
+          <div class="title">Operations Manager · ext. 201 · lakana@halyard-maritime.example</div>
+          <p>Fourteen years with HML. Started as a deckhand on MV Kōlea, which is still her favorite vessel in the fleet. Runs the ops room and the weekly fleet meeting.</p>
+        </div>
+      </div>
+      <div class="person">
+        <div class="person__avatar">MT</div>
+        <div>
+          <h3>Marcus Tan</h3>
+          <div class="title">IT Support · ext. 204 · mtan@halyard-maritime.example</div>
+          <p>Our one-person IT department. Keeps the dashboard, the servers, and the ops room wifi running. On leave until late October.</p>
+        </div>
+      </div>
+      <div class="person">
+        <div class="person__avatar">DW</div>
+        <div>
+          <h3>Dana Whitfield</h3>
+          <div class="title">Customer Service Lead · ext. 210 · dwhitfield@halyard-maritime.example</div>
+          <p>Born and raised in Hilo. First point of contact for customers with delayed cargo. Knows every account by name.</p>
+        </div>
+      </div>
+      <div class="person">
+        <div class="person__avatar">KP</div>
+        <div>
+          <h3>Keoni Pa</h3>
+          <div class="title">Port Coordinator, Honolulu · ext. 231 · kpa@halyard-maritime.example</div>
+          <p>Coordinates berthing and crane time at Pier 51. Former harbor pilot.</p>
+        </div>
+      </div>
+      <div class="person">
+        <div class="person__avatar">RS</div>
+        <div>
+          <h3>Rin Sato</h3>
+          <div class="title">Finance · ext. 240 · rsato@halyard-maritime.example</div>
+          <p>Invoicing, credit limits, and customs bonds. Please send freight claims to Rin, not to ops.</p>
+        </div>
+      </div>
+      <div class="person">
+        <div class="person__avatar">🐈</div>
+        <div>
+          <h3>Mochi</h3>
+          <div class="title">Ops room cat · no extension</div>
+          <p>Unofficial staff since 2021. Supervises the whiteboard. Do not feed.</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="mock-note"><span id="since"></span> · Training site. Not a real organization.</p>
+  </main>
+</div>
+
+<script src="assets/js/app.js"></script>
+<script src="assets/js/page.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+HALYARD MARITIME LOGISTICS - OPS TEAM NOTES
+(internal - please do not share outside the ops room)
+Last updated by Leilani, August 2026
+
+(Training site. Nothing in this file is real.)
+
+DASHBOARD
+- Everyone on the day shift uses the shared "analyst" login. The password is the
+  usual one (company name + year + !). It has not changed since 2024. Please do
+  NOT change it without telling everyone, the night crew got locked out last time.
+- Tick "Remember me" on the ops room PC so nobody has to type it.
+- If the dashboard breaks while Marcus is on leave, the admin login is the default
+  one from the vendor's setup guide.
+
+OPS ROOM
+- Crew wifi password is on the whiteboard (next to the picture of Mochi the cat).
+- Port Authority integration key is on the Admin page if the API team asks for it.
+
+CUSTOMERS
+- Customer phone numbers and credit limits are on the Customers page so anyone on
+  shift can answer calls. Do not read credit limits out loud to callers.
+
+flag{shared-passwords-are-no-passwords}

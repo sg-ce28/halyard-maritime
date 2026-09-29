@@ -1,0 +1,10 @@
+# Halyard Maritime Logistics - operations dashboard
+# Keep search engines out of the internal pages.
+User-agent: *
+Disallow: /admin.html
+Disallow: /reset.html
+Disallow: /backup/
+Disallow: /internal-notes.txt
+Allow: /
+
+# flag{robots-draw-the-map}
