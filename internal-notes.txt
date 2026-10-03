@@ -20,4 +20,4 @@ CUSTOMERS
 - Customer phone numbers and credit limits are on the Customers page so anyone on
   shift can answer calls. Do not read credit limits out loud to callers.
 
-flag{shared-passwords-are-no-passwords}
+FLAG{shared-passwords-are-no-passwords}

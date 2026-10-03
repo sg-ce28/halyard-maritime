@@ -12,7 +12,7 @@ var HML = (function () {
   var SESSION_KEY = 'hml_session';
   var REMEMBER_KEY = 'hml_remember';
 
-  // User accounts.  flag{secrets-in-javascript}
+  // User accounts.  FLAG{secrets-in-javascript}
   var USERS = [
     { user: 'analyst',    pass: 'Halyard2024!', role: 'viewer', name: 'Ops Analyst (shared)' },
     { user: 'dwhitfield', pass: 'Halyard2024!', role: 'viewer', name: 'Dana Whitfield' },
@@ -117,6 +117,8 @@ var HML = (function () {
       }
       if (remEl.checked) {
         // Remember me: store the login so the form is pre-filled next time.
+        // NOTE: this writes the username AND password in clear text to local storage.
+        // Anyone on this shared PC can read it back.  FLAG{remember-me-stores-plaintext}
         localStorage.setItem(REMEMBER_KEY, JSON.stringify({ user: u.user, pass: u.pass }));
       } else {
         localStorage.removeItem(REMEMBER_KEY);

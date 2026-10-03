@@ -7,4 +7,5 @@ Disallow: /backup/
 Disallow: /internal-notes.txt
 Allow: /
 
-# flag{robots-draw-the-map}
+# Vendor compliance self-assessment: /compliance-self-assessment.txt
+# FLAG{robots-draw-the-map}

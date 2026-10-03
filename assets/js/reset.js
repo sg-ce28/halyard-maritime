@@ -58,7 +58,7 @@
       out.className = 'alert alert--ok';
       out.innerHTML = 'Identity confirmed for <strong>' + u + '</strong>. Temporary password: ' +
         '<code>Temp-' + u + '-1234</code> (training site, not a real credential). ' +
-        '<code>flag{public-answers-are-not-secrets}</code>';
+        '<code>FLAG{public-answers-are-not-secrets}</code>';
     } else {
       out.className = 'alert alert--bad';
       out.textContent = 'That answer does not match our records. Try again.';

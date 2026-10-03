@@ -25,7 +25,7 @@
       if (match) { shown++; }
     }
 
-    // Show the user what they searched for.  flag{escape-what-you-echo}
+    // Show the user what they searched for.  FLAG{escape-what-you-echo}
     if (q === '') {
       msg.innerHTML = 'Showing all ' + shown + ' shipments.';
     } else {

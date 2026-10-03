@@ -1,6 +1,5 @@
 // Halyard Maritime Logistics - application config
 // OLD COPY kept "just in case" during the November 2025 migration. Safe to delete? -Marcus
-// flag{old-backups-still-talk}
 //
 // (Training site: every value below is made up.)
 
@@ -24,5 +23,8 @@ module.exports = {
 
   integrations: {
     portAuthorityApiKey: 'hml_live_FAKE-KEY-DO-NOT-USE-000000'
-  }
+  },
+
+  // Legacy audit marker written by the old backup tool (Base64).
+  auditFlag: 'RkxBR3tvbGQtYmFja3Vwcy1zdGlsbC10YWxrfQ=='
 };

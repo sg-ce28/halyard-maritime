@@ -1,0 +1,18 @@
+HALYARD MARITIME LOGISTICS - PRE-LAUNCH SECURITY SELF-ASSESSMENT
+Vendor-completed questionnaire. (Training site: every answer below is fictional.)
+Submitted by the dashboard vendor ahead of go-live. The assessor's job is to test
+each claim against the running system, not to take it at face value.
+
+Control area                          Vendor claim
+-----------------------------------   ----------------------------------------
+IA  Authentication                    "All sign-in is enforced server-side."
+AC  Authorization                     "Role checks are enforced on the server."
+AU  Audit logging                     "All administrative actions are logged."
+CM  Configuration management          "No debug modes are enabled in production."
+MP  Media protection                  "No offline backups of config are retained."
+SC  Secrets handling                  "All secrets are encrypted at rest."
+IA  Credential policy                 "Unique per-user credentials; no shared logins."
+IA  Key management                    "Integration keys are rotated every 90 days."
+
+Assessor note: compare each claim with the evidence in the running dashboard.
+A self-attested questionnaire is a claim, not verified assurance.
