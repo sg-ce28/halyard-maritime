@@ -25,11 +25,12 @@
       if (match) { shown++; }
     }
 
-    // Show the user what they searched for.  FLAG{escape-what-you-echo}
+    // Show the user what they searched for.
     if (q === '') {
       msg.innerHTML = 'Showing all ' + shown + ' shipments.';
     } else {
       msg.innerHTML = 'Showing ' + shown + ' result(s) for <strong>' + q + '</strong>.';
+      if (window.KAPU && /[<>]/.test(q)) { KAPU.complete('escape-what-you-echo', 'innerHTML'); }
     }
   });
 

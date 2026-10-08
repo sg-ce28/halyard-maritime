@@ -56,9 +56,10 @@
     out.hidden = false;
     if (normalise(aEl.value) === rec.a) {
       out.className = 'alert alert--ok';
+      if (window.KAPU) { KAPU.complete('public-answers-are-not-secrets', aEl.value); }
       out.innerHTML = 'Identity confirmed for <strong>' + u + '</strong>. Temporary password: ' +
         '<code>Temp-' + u + '-1234</code> (training site, not a real credential). ' +
-        '<code>FLAG{public-answers-are-not-secrets}</code>';
+        '';
     } else {
       out.className = 'alert alert--bad';
       out.textContent = 'That answer does not match our records. Try again.';

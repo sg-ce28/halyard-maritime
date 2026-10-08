@@ -12,6 +12,7 @@
   // Only administrators may see this page.
   if (session.role === 'admin') {
     page.classList.remove('locked');
+    if (window.KAPU) { KAPU.complete('never-trust-the-browser', 'admin'); }
   } else {
     page.classList.add('locked');
     if (roleEl) { roleEl.textContent = session.role; }

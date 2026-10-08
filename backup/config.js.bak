@@ -26,5 +26,5 @@ module.exports = {
   },
 
   // Legacy audit marker written by the old backup tool (Base64).
-  auditFlag: 'RkxBR3tvbGQtYmFja3Vwcy1zdGlsbC10YWxrfQ=='
+  auditFlag: 'aG1sLWRiLWJhY2t1cC1rZXktNzczMQ=='
 };

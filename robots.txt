@@ -8,4 +8,3 @@ Disallow: /internal-notes.txt
 Allow: /
 
 # Vendor compliance self-assessment: /compliance-self-assessment.txt
-# FLAG{robots-draw-the-map}
