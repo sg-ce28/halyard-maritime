@@ -19,3 +19,11 @@ OPS ROOM
 CUSTOMERS
 - Customer phone numbers and credit limits are on the Customers page so anyone on
   shift can answer calls. Do not read credit limits out loud to callers.
+
+SECURITY (from the API team, Sep 18)
+- Something is pulling the full vessel schedule and the customer list on a loop from an
+  outside address (the 203.0.113.x block named in last week's regional maritime advisory).
+  Automated, odd hours. The Port Authority integration key looks like the target.
+- Legal wants the crew roster locked down: two deck officers were phished last month by a
+  "maritime research institute" that turned into a recruitment pitch. Treat vessel schedules
+  and port-call times as sensitive; they are collection targets, not just operational data.
